@@ -1,0 +1,7 @@
+:root {
+  --main-border: 1px solid var(--black-color);
+  --black-color: #191a1b;
+  --black-color__alpha: #191a1b85;
+  --default-padding: 20px;
+  --default-gap: 10px;
+}
