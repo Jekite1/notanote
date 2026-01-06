@@ -57,7 +57,7 @@ html,
 body,
 #root,
 #app {
-  background-color: #f0f0f0;
+  background-color: white;
 
   overflow-x: hidden;
   min-height: 100svh;

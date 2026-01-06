@@ -27,3 +27,14 @@
   color: white;
   font-size: 48px;
 }
+.nav-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--default-gap);
+}
+.nav-profile-img {
+  width: 55px;
+  height: 55px;
+  display: none;
+}

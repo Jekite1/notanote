@@ -18,6 +18,12 @@
 }
 .task {
   border-bottom: var(--main-border);
+  display: flex;
+  padding: var(--default-padding);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--default-gap);
+  background-color: white;
 }
 .task__second {
   background-color: rgba(0, 0, 0, 0.1);
@@ -31,23 +37,19 @@
   height: 22px;
   background-color: white;
 }
-.unit {
-  display: flex;
-  padding: var(--default-padding);
-  flex-direction: row;
-  align-items: center;
-  gap: var(--default-gap);
-}
+
 .section {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: var(--big-gap);
 }
 .input::placeholder {
   color: var(--black-color__alpha);
 }
 .input {
   width: 100%;
+  background-color: white;
+  padding: var(--default-padding);
 }
 .button {
   display: flex;
@@ -58,14 +60,30 @@
   color: white;
 }
 .button__white {
-  display: flex;
   background-color: white;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
   color: var(--black-color);
+  border: var(--main-border);
+}
+.button__red {
+  background-color: var(--default-red);
 }
 .adapt {
   display: flex;
   width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--default-gap);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: var(--default-gap);
+}
+.h2 {
+  font-size: 40px;
 }
