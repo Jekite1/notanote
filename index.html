@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head class="head">
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
           <span class="logo-title">notanote</span>
         </div>
         <div class="nav-profile">
-          <button class="button button__white">Log in</button>
+          <a href="./auth.html" class="button button__white"> Log in </a>
           <img class="nav-profile-img" src="./images/profile.png" alt="" />
         </div>
       </div>
@@ -25,24 +25,15 @@
       <section class="section">
         <div class="bordered task-new">
           <input
+            id="inputNote"
             placeholder="Do not note a note!!!"
             type="text"
             class="bordered input"
           />
-          <button class="button">Add</button>
+          <button id="buttonAdd" class="button">Add</button>
         </div>
-        <div class="task-list">
-          <div class="bordered tasks">
-            <div class="bordered task">
-              <div class="bordered task-check"></div>
-              <span class="task-title"> Ur note </span>
-            </div>
-            <div class="bordered task task__second">
-              <div class="bordered task-check"></div>
-              <span class="task-title"> Ur note </span>
-            </div>
-          </div>
-          <button class="button adapt">Clean all</button>
+        <div id="tasks" class="task-list bordered">
+          <button id="buttonClean" class="button adapt">Clean all</button>
         </div>
       </section>
     </main>

@@ -22,6 +22,7 @@
   padding: var(--default-padding);
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: var(--default-gap);
   background-color: white;
 }
@@ -32,10 +33,27 @@
   border-top: var(--main-border);
   border-bottom: none;
 }
+
+.task-content {
+  display: flex;
+  flex-direction: row;
+  gap: var(--default-gap);
+}
+
 .task-check {
   width: 22px;
   height: 22px;
   background-color: white;
+}
+
+.task-del {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 22px;
+  height: 22px;
+  background-color: rgb(255, 122, 122);
 }
 
 .section {
